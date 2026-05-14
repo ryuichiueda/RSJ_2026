@@ -7,43 +7,43 @@ Database file #2: ../bibfiles/jpn.bib
 Database file #3: ../bibfiles/url.bib
 You've used 1 entry,
             2620 wiz_defined-function locations,
-            598 strings with 4310 characters,
-and the built_in function-call counts, 373 in all, are:
-= -- 28
+            595 strings with 4258 characters,
+and the built_in function-call counts, 315 in all, are:
+= -- 21
 > -- 7
-< -- 1
+< -- 0
 + -- 3
 - -- 2
-* -- 24
-:= -- 55
+* -- 10
+:= -- 49
 add.period$ -- 1
 call.type$ -- 1
 change.case$ -- 3
 chr.to.int$ -- 0
 cite$ -- 1
-duplicate$ -- 20
-empty$ -- 37
+duplicate$ -- 22
+empty$ -- 35
 format.name$ -- 3
-if$ -- 82
+if$ -- 71
 int.to.chr$ -- 0
 int.to.str$ -- 1
-missing$ -- 1
+missing$ -- 2
 newline$ -- 7
 num.names$ -- 2
-pop$ -- 9
+pop$ -- 15
 preamble$ -- 2
 purify$ -- 3
 quote$ -- 0
-skip$ -- 20
+skip$ -- 21
 stack$ -- 0
-substring$ -- 26
-swap$ -- 1
-text.length$ -- 1
+substring$ -- 5
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 2
 warning$ -- 0
-while$ -- 3
+while$ -- 2
 width$ -- 2
 write$ -- 11
-is.kanji.str$ -- 12
+is.kanji.str$ -- 11

@@ -1,8 +1,7 @@
 \newcommand{\noop}[1]{}
 \begin{thebibliography}{1}
 
-\bibitem{上田2018}
-{\noop{うえだ}}上田隆一：移動ロボットのためのROSパッケージの紹介と実機への導入方法,
-  計測と制御, Vol.~57 (2018), 715--720.
+\bibitem{上田2019}
+{\noop{うえだ}}上田隆一：詳解確率ロボティクス, 講談社, 2019.
 
 \end{thebibliography}
