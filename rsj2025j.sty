@@ -1,0 +1,301 @@
+%
+%   Modified by RSJ2024 Publication committee 2024/5/4
+%    〇XeLaTeX 版 (長さのzwなど、主に最近のTeXで対応していない部分を修正)
+%    〇用紙サイズ指定を geometry パッケージに変更
+%
+%   Modified by RSJ2023 Publication committee 2023/5/14
+%    〇同時投稿オプション対応によりabstactを追加
+%
+%   Modified by RSJ2022 Publication committee 2022/2/22
+%     〇enumerateの番号を(1)に変更
+% 
+%   Modified by Yusuke Maeda 2015/05/10 for pLaTeX2e
+%     ○ 「参考文献」の表記を Word テンプレートに合わせた
+%     ○ 図のキャプションの表記を Word テンプレートに合わせた
+%     ○ \reffig, \reftab, \refeq も日本語表記に（使いたい人だけ用）
+% 
+%   Modified by Ryuichi Hodoshima 2011/05/23 for pLaTeX2e
+%     ○ 新フォーマットに対応
+%     ○ 英語タイトル，英語著者名，abstruct，Keywordを排除
+%     ○ Wordテンプレートに対応し、topmarginを5[mm] >> 0[mm]
+% 
+%   Modified by Koh Hosoda 2001/06/13 for pLaTeX2e
+%     ○ jarticle.styの読込みを元のファイルにする(.clsへの対応のため)
+%     ○ \def\documentに関する定義を削除(もともと，この定義はlatex.tex内でな
+%        されているため，pLaTeX2eではエラーとなる)
+%     ○ latex209と，見てくれが似るように，title回りの寸法調整
+%
+%   Revision 1.2  1995/08/18  08:25:44  oshiro
+%	14/08/95 OSHIRO Naoki
+% 
+%
+\typeout{*** Document Style 'RSJ 2024 for XeLaTeX (2024/05/??) ***}
+\usepackage{ifxetex}
+\usepackage{geometry}
+\ifxetex
+\typeout{XeTeX detected.  Entering XeTeX mode.}
+\else
+\newcommand{\zw}{zw}
+\fi
+%\twocolumn
+\sloppy
+\flushbottom
+ \leftmargini 2em
+ \leftmarginv .5em
+\leftmarginvi .5em
+% \marginparwidth 48pt
+% \marginparsep 10pt
+ \hbadness=1000
+ \tolerance=5000 %(Must be less than 10000=sloppy in Japanese)
+
+\columnsep 7mm
+%\textheight 250mm
+%\textwidth 170mm
+%\topmargin -1in
+%\addtolength{\topmargin}{0mm}
+%\oddsidemargin -1in
+%\evensidemargin -36pt
+%\addtolength{\oddsidemargin}{20mm}
+\parindent 1\zw
+\geometry{paper=a4paper,width=170mm,bottom=27mm,height=250mm,footskip=0pt,headsep=0pt,headheight=0pt}
+
+%\def\document{\endgroup
+%  \@colht\textheight  \@colroom\textheight \vsize\textheight
+%   \columnwidth\textwidth \@clubpenalty\clubpenalty
+%   \if@twocolumn \advance\columnwidth -\columnsep 
+%      \divide\columnwidth\tw@ \hsize\columnwidth \@firstcolumntrue 
+%   \fi
+%  \hsize\columnwidth \linewidth\hsize
+%  \begingroup\@floatplacement\@dblfloatplacement
+%   \makeatletter\let\@writefile\@gobbletwo
+%   \@input{\jobname.aux}\endgroup 
+%  \if@filesw \immediate\openout\@mainaux=\jobname.aux
+%    \immediate\write\@mainaux{\relax}\fi
+%  \def\do##1{\let ##1\@notprerr}%
+%  \@preamblecmds
+%  \let\do\noexpand  
+%  \@normalsize\everypar{}\baselineskip7mm}
+
+\def\title#1{\gdef\@title{#1}}
+\def\author#1{\gdef\@author{#1}}
+\def\and{%%   % \begin{tabular} 
+  \end{tabular}%
+%  \hskip 1zw plus .01fil%
+  \hskip \zw plus .01fil%
+  \begin{tabular}[t]{c}%% \end{tabular}
+  }
+\def\@maketitle{\newpage%
+  \null%
+  \vspace*{-6mm} % added for pLaTeX
+  \begin{center} %
+    {\LARGE\bfseries \@title \par } %
+    \vskip 0.5em %
+    {\large \@author }%
+    \vskip 2em
+  \end{center}%
+  \@ifundefined{@abstract}{}{%
+    \small%
+    \begin{center}%
+      \begin{minipage}{.9\textwidth}%
+      \quad\@abstract%
+      \end{minipage}%
+    \end{center}%
+    \gdef\@abstract{}}%
+%   \vspace*{1.0mm} % added for pLaTeX
+%    \hbox{\kern .3\textwidth\vbox{\hrule width .4\textwidth}}%
+  \vskip 1\zw
+}%
+
+% jsarticle系で冒頭のsection前に余計なスペースが入る対策
+\let\maketitleorg\maketitle
+\renewcommand{\maketitle}{
+  \maketitleorg
+  \vspace*{-8mm}
+}
+
+
+
+\long\def\abstract#1{\long\gdef\@abstract{#1}}%
+
+\def\thesection{\arabic{section}.}
+\def\thesubsection{\arabic{section}.\arabic{subsection}}
+
+\def\@eqnnum{{\rm(\theequation)}} 
+\def\eqnarray{%
+  \stepcounter{equation}%
+  \let\@currentlabel=\theequation
+  \global\@eqnswtrue
+  \global\@eqcnt\z@
+  \tabskip\@centering
+  \let\\=\@eqncr
+  $$\halign to \displaywidth\bgroup\@eqnsel\hskip\@centering
+  $\displaystyle\tabskip\z@{##}$&\global\@eqcnt\@ne
+  \hfil$\displaystyle{{}##{}}$\hfil
+  &\global\@eqcnt\tw@$\displaystyle\tabskip\z@{##}$\hfil
+  \tabskip\@centering&\llap{##}\tabskip\z@\cr}
+
+\def\thebibliography#1{% 参考文献出力命令
+%  \vskip 1zh plus .2ex minus .2ex 
+  \vskip 1\zw plus .2ex minus .2ex 
+  \centering{\normalsize\bfseries 参　考　文　献}\par\@mkboth{References}{References}
+%  \noindent{\normalsize\bf 参　考　文　献}\par\@mkboth{References}{References}
+  \list{[\arabic{enumi}]}			% ラベルは [1], [2], ...
+    {\settowidth\labelwidth{#1)}		% ラベルの幅は [引数]
+     \leftmargin\labelwidth		% 左余白はラベル幅
+     \parsep \z@ plus 1pt minus 1pt
+     \itemsep \z@ plus 1pt minus 1pt
+     \advance \leftmargin by \labelsep	% 左余白を \labelsep だけ増す
+     \usecounter{enumi}}			% enumi カウンタで文献番号を数える
+  \def\newblock{\hskip .11em plus .33em minus .07em}%
+  					% \newblock は若干の空きをあける命令  
+  \sloppy				% 段落は多少空きが不揃いでもよい
+  \clubpenalty=4000 \widowpenalty=4000		% なるべく段落中の１行だけ別ページにならないように
+  \sfcode`\.=1000\relax}				% 上の解説参照
+\let\endthebibliography=\endlist		% 終わりは list の終わりと同じ
+%\def\@cite#1#2{$^{\hbox{\scriptsize{#1\if@tempswa , #2\fi})}}$}
+\def\@cite#1#2{[{#1\if@tempswa , #2\fi}]}
+
+\def\section{\@startsection {section}{1}{\z@}{.8ex plus .5ex minus 
+ .2ex}{.5ex plus .2ex}{\large\bfseries}}
+\def\subsection{\@startsection{subsection}{2}{\z@}{.8ex plus .5ex minus 
+ .2ex}{.5ex plus .2ex}{\normalsize\bfseries}}
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}{.8ex plus 
+.5ex minus .2ex}{.5ex plus .2ex}{\normalsize\bfseries}}
+\def\paragraph{\@startsection
+ {paragraph}{4}{\z@}{0.5ex plus .3ex minus .2ex}{-1em}{\normalsize\bfseries}}
+\def\subparagraph{\@startsection
+ {subparagraph}{4}{\parindent}{0.5ex plus .3ex minus 
+ .2ex}{-1em}{\normalsize\bfseries}}
+
+\def\labfig#1{\label{fig:#1}}
+\def\labtab#1{\label{tab:#1}}
+\def\labeq#1{\label{eq:#1}}
+\def\reffig#1{図\ref{fig:#1}}
+\def\reftab#1{表\ref{tab:#1}}
+\def\refeq#1{式(\ref{eq:#1})}
+
+\def\fnum@figure{{図}\thefigure}
+\def\fnum@table{{表}\thetable}
+
+\long\def\@caption#1[#2]#3{\par\addcontentsline{\csname
+  ext@#1\endcsname}{#1}{\protect\numberline{\csname 
+  the#1\endcsname}{\ignorespaces #2}}\begingroup
+    \@parboxrestore
+%    \normalsize
+    \small
+    \@makecaption{\csname fnum@#1\endcsname}{\ignorespaces #3}\par
+  \endgroup}
+
+\long\def\@makecaption#1#2{% 図・表の見出しを作る命令
+   \vskip 5\p@			% 10pt 下に進む 
+%   \setbox\@tempboxa\hbox{#1\hskip1zw#2}% 「図1 何々」の形の箱を作る
+   \setbox\@tempboxa\hbox{#1\hskip1\zw#2}% 「図1 何々」の形の箱を作る
+   \ifdim \wd\@tempboxa >\hsize % 箱が 1 行に入りきらないなら
+     \begin{list}{#1}{
+%       \leftmargin 2zw \itemindent 0ex \labelsep 1ex%
+       \leftmargin 2\zw \itemindent 0ex \labelsep 1ex%
+       \labelwidth \leftmargin%
+       \addtolength{\labelwidth}{-\itemindent}%
+       \addtolength{\labelwidth}{-\labelsep}%
+       \rightmargin=\leftmargini%
+       \addtolength{\rightmargin}{-\itemindent}}%
+       \item#2		% 通常の段組として組む（うそ）
+     \end{list}\par%
+   \else			% そうでなければ
+       \hbox to\hsize{\hfil\box\@tempboxa\hfil}% 箱を中央揃えで出力  
+   \fi}
+
+\def\deg{${}^\circ$}
+\def\atan2{\mbox{atan2}}
+\def\arg{\mbox{arg}}
+
+\def\eqnarray{%
+  \stepcounter{equation}%
+  \let\@currentlabel=\theequation
+  \global\@eqnswtrue
+  \global\@eqcnt\z@
+  \tabskip\@centering
+  \let\\=\@eqncr
+  $$\halign to \displaywidth\bgroup\@eqnsel\hskip\@centering
+  $\displaystyle\tabskip\z@{##}$&\global\@eqcnt\@ne
+  \hfil$\displaystyle{{}##{}}$\hfil
+  &\global\@eqcnt\tw@$\displaystyle\tabskip\z@{##}$\hfil
+  \tabskip\@centering&\llap{##}\tabskip\z@\cr}
+
+\newcounter{stepnumber}
+\newenvironment{stepping}{\usecounter{stepnumber}}{}%
+\def\step{%
+  \addtocounter{stepnumber}{1}%
+  \parindent=0pt %
+  \par%
+  {\bfseries Step \arabic{stepnumber}.}%
+  \hspace{1em}}
+
+\def\quotation{% \begin{quotation} で実行される命令
+  \list{}{% \list は \begin{list} で実行される命令
+    \listparindent=5ex		% 段落の頭下げ
+    \itemindent=\listparindent	% 項目の頭下げも同じ
+    \rightmargin\leftmargin	% 左右の空白を等しく
+    \parsep 0pt plus 1pt}
+  \item[]}
+\let\endquotation=\endlist	% \end{quotation} で実行される命令
+
+\def\quote{% \begin{quote} で実行される命令
+  \list{}{\rightmargin\leftmargin}\item[]}
+			% 段落の頭下げをしない点が quotation と異なる
+\let\endquote=\endlist% \end{quote} で実行される命令
+
+\newcount\@itemdepth \@itemdepth = 0
+\def\itemize{%
+  \ifnum %
+    \@itemdepth >3 \@toodeep%
+  \else %
+    \advance\@itemdepth \@ne%
+    \edef\@itemitem{labelitem\romannumeral\the\@itemdepth}%
+    \list{\csname\@itemitem\endcsname}{%
+      \def\makelabel##1{\hss\llap{##1}}%
+      \topsep 3pt%
+      \partopsep 0pt%
+      \parsep 0pt%
+      \itemsep 0pt}%
+  \fi}
+\let\enditemize =\endlist
+
+\newcount\@enumdepth \@enumdepth = 0
+\@definecounter{enumi}
+\@definecounter{enumii}
+\@definecounter{enumiii}
+\@definecounter{enumiv}
+\def\enumerate{%
+  \ifnum %
+    \@enumdepth >3 \@toodeep
+  \else%
+    \advance\@enumdepth \@ne %
+    \edef\@enumctr{enum\romannumeral\the\@enumdepth}%
+    \list{\csname label\@enumctr\endcsname}{%
+      \usecounter{\@enumctr}%
+      \def\makelabel##1{\hss\llap{##1}}
+      \topsep 3pt%
+      \partopsep 0pt%
+      \parsep 0pt%
+      \itemsep 0pt}%
+  \fi}
+\let\endenumerate =\endlist
+\def\labelenumi{(\arabic{enumi})}	% 箇条書きのフォーマットを(1)に変更
+
+
+% フロートの各設定
+\setcounter{topnumber}{3}
+\def\topfraction{.95}
+\setcounter{bottomnumber}{2}
+\def\bottomfraction{.95}
+\setcounter{totalnumber}{4}
+\def\textfraction{.05}
+\def\floatpagefraction{.5}
+
+\def\acknowledgements{\par
+%  {\bfseries 謝\hskip1zw 辞}\hskip1zw
+  {\bfseries 謝\hskip1\zw 辞}\hskip1\zw
+\ignorespaces}
+\def\endacknowledgements{\par}
+

@@ -1,0 +1,60 @@
+% お使いの環境に合わせて以下3行のdocumentclassをお選びください. 
+\documentclass[twocolumn]{jarticle} % pLaTeX
+%\documentclass[uplatex,twocolumn]{jsarticle}  % upLaTeX
+%\documentclass[xelatex,twocolumn,ja=standard,enablefam=true]{bxjsarticle} % XeLaTeX
+
+\usepackage{rsj2025j}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{url}
+\usepackage{tikz}
+
+\begin{document}
+\title{第43回日本ロボット学会学術講演会 原稿の書き方}
+\author{〇著者甲姓\ 著者甲名（著者甲所属）\ \ 著者乙姓\ 著者乙名（著者乙所属）}
+\abstract{From 2023, authors are encouraged to write an article's abstract in either Japanese or English. Ab-stracts should be 3-6 lines long (100 words or less in English). If authors use simultaneous submission of the [Letter], an abstract in English is required. If authors are not using simultaneous submission and will submit the article in English to other journals in the future, an abstract in English is not recommended due to the risk of being considered self-plagiarism. }
+\setlength{\baselineskip}{4.4mm}	% 行間の設定
+\maketitle
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\section{講演論文原稿作成方法について}
+
+\cite{上田2018}
+
+ロボティクス, 特に知能ロボティクスには計測という観点からすると, 2つの正反対のアプローチがある. 
+
+* ひとつは計測を極めること（確率ロボティクス以前のロボティクスと狭義の確率ロボティクス）
+* もうひとつは計測ではなく計測できない状況でどうロボットを知的に動かすか（広義の確率ロボティクスと学習を用いたアプローチ）
+
+産業応用という点では前者ばかりが取り上げられる状況で, たとえば「自己位置推定」といったときに正確に位置を計測することが期待される. また, 多くの研究者も（特に確率ロボティクスを勉強した若手については私がやめろと言ってるにもかかわらず（これはメール内での単なるボヤキです））, ロボットを精緻に動かそうとして「精度」を追い求めてきた. しかし, ここ数年, 強化学習やVision-language-Action
+modelでロボットを制御する手法が台頭してきており, 精度を追い求める方法の限界を超えつつある. ロボットを現場に効果的に導入されるためにはこの両者について多くの人が把握することが望ましい. 本発表ではこの両者の違いについて, 統計という面から解説する. 
+
+%% 謝辞（必要な場合のみ）
+%\begin{acknowledgements}
+%    Thanks.
+%\end{acknowledgements}
+
+\small
+\bibliographystyle{jorsj}
+\bibliography{../bibfiles/eng,../bibfiles/jpn,../bibfiles/url}
+
+%\begin{thebibliography}{9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\bibitem{website}
+%``第43回日本ロボット学会学術講演会のウェブサイト''，
+%  \url{https://ac.rsj-web.org/2025/}
+%\bibitem{typst}
+%  ``Typst website'',
+%  \url{https://typst.app}
+%\bibitem{yamada2000}
+%  山田太郎，鈴木一郎：
+%  ``第100回日本ロボット学会講演会用原稿の書き方''，
+%  日本ロボット学会誌, vol. 99, no. 4, pp. 8--12, 2082.
+%\bibitem{rsj_rules}
+%  ``日本ロボット学会誌・寄稿および査読に関する規則集''，
+%  \url{https://www.rsj.or.jp/content/files/data_rules/F-02.pdf}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\end{thebibliography}
+
+\end{document}
