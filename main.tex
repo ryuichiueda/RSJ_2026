@@ -9,15 +9,33 @@
 \usepackage{tikz}
 
 \begin{document}
-\title{第43回日本ロボット学会学術講演会 原稿の書き方}
-\author{〇著者甲姓\ 著者甲名（著者甲所属）\ \ 著者乙姓\ 著者乙名（著者乙所属）}
+\title{計測とロボティクス}
+\author{〇上田\ 隆一（千葉工大）}
 \abstract{From 2023, authors are encouraged to write an article's abstract in either Japanese or English. Ab-stracts should be 3-6 lines long (100 words or less in English). If authors use simultaneous submission of the [Letter], an abstract in English is required. If authors are not using simultaneous submission and will submit the article in English to other journals in the future, an abstract in English is not recommended due to the risk of being considered self-plagiarism. }
 \setlength{\baselineskip}{4.4mm}	% 行間の設定
 \maketitle
 \thispagestyle{empty}
 \pagestyle{empty}
 
-\section{講演論文原稿作成方法について}
+\section{はじめに}
+
+人間が移動したり手先で細かい作業をしたりするときは，目的地までの距離や物体の大き
+さ，摩擦力などを常に正確に把握しているわけではない．目的地に近づくと地図を注意深く
+見たり，手作業では指の一部を物体に固定して精度を出したりするなど，要所では正確さを
+得ようとする．しかし不要なときは，はたから見るといい加減に動いているように見える．
+
+一方，これをロボットで再現することは未解決の問題であった．工学には「工作機械以上の
+精度の部品は作れないこと」を意味する母性原理という言葉があり，何かタスクを行うロボ
+ットも，そのタスクに必要な動きやセンシングの精度が十分に確保されるように設計される．
+しかしこの原理の言う「精度」がタスクに対して本当に必要なものかどうかは自明ではない．
+ロボットが一般に人間のように滑らかに動かない理由にはハードウェアの性能上の制約もあ
+るが，不要なときに精度を確保しよう
+とする方針にも原因がある．
+しかし，「精度を確保しないで作業
+する」（もっと言うと，「いい加減に
+作業する」）ことをロボットにプログ
+ラムすることは，従来の枠組みでは困
+難である．
 
 \cite{上田2018}
 
@@ -28,6 +46,9 @@
 
 産業応用という点では前者ばかりが取り上げられる状況で, たとえば「自己位置推定」といったときに正確に位置を計測することが期待される. また, 多くの研究者も（特に確率ロボティクスを勉強した若手については私がやめろと言ってるにもかかわらず（これはメール内での単なるボヤキです））, ロボットを精緻に動かそうとして「精度」を追い求めてきた. しかし, ここ数年, 強化学習やVision-language-Action
 modelでロボットを制御する手法が台頭してきており, 精度を追い求める方法の限界を超えつつある. ロボットを現場に効果的に導入されるためにはこの両者について多くの人が把握することが望ましい. 本発表ではこの両者の違いについて, 統計という面から解説する. 
+
+
+\section{おわりに}
 
 %% 謝辞（必要な場合のみ）
 %\begin{acknowledgements}
