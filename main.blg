@@ -1,0 +1,49 @@
+This is upBibTeX, Version 0.99d-j0.36-u2.00 (utf8.euc) (TeX Live 2025/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: jorsj.bst
+Database file #1: ../bibfiles/eng.bib
+Database file #2: ../bibfiles/jpn.bib
+Database file #3: ../bibfiles/url.bib
+You've used 1 entry,
+            2620 wiz_defined-function locations,
+            595 strings with 4258 characters,
+and the built_in function-call counts, 315 in all, are:
+= -- 21
+> -- 7
+< -- 0
++ -- 3
+- -- 2
+* -- 10
+:= -- 49
+add.period$ -- 1
+call.type$ -- 1
+change.case$ -- 3
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 22
+empty$ -- 35
+format.name$ -- 3
+if$ -- 71
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 2
+newline$ -- 7
+num.names$ -- 2
+pop$ -- 15
+preamble$ -- 2
+purify$ -- 3
+quote$ -- 0
+skip$ -- 21
+stack$ -- 0
+substring$ -- 5
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 2
+warning$ -- 0
+while$ -- 2
+width$ -- 2
+write$ -- 11
+is.kanji.str$ -- 11
