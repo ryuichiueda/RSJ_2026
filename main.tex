@@ -7,6 +7,9 @@
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{url}
 \usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newcommand{\V}[1]{\boldsymbol{#1}}
 
 \begin{document}
 \title{計測とロボット\\
@@ -112,12 +115,16 @@
 
 確率ロボティクスはこのような問題に対し, 
 「計測できないなら, 分からないということを
-確率分布で表す」というアイデアと、
+確率分布で表す」というアイデアと, 
 そのアイデアをロボットのプログラムにするための
-具体的な方法を提示した。
+具体的な方法を提示した. 
+数式で表すと, 旧来の方法が
+\begin{align}
+	\hat{\V{x}} = \V{x}^* \pm \V{\varepsilon}
+\end{align}
 
 
-\section{2通りの意味がある確率ロボティクス}
+\section{2通りに分裂した確率ロボティクス}
 
 \subsection{点推定の正確さの追求}
 
