@@ -1,0 +1,9 @@
+This paper examines the relationship between measurement and robot control.
+Probabilistic robotics has led robots from factories to human living
+environments by representing and tolerating the ambiguity of measurement.
+On the other hand, since robots are easier to control with accurate measurement,
+the accuracy is pursued in this field as well. However, in recent years,
+learning-based approaches that do not involve direct measurement have begun to show success.
+We discuss this situation and explain
+that a perspective beyond accuracy is necessary
+when considering the application of robots to industry.
