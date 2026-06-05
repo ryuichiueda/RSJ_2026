@@ -1,0 +1,51 @@
+This is upBibTeX, Version 0.99d-j0.36-u2.00 (utf8.euc) (TeX Live 2025/Homebrew)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: jorsj.bst
+Database file #1: ../bibfiles/eng.bib
+Database file #2: ../bibfiles/jpn.bib
+Database file #3: ../bibfiles/url.bib
+Warning--I didn't find a database entry for "black2024"
+You've used 2 entries,
+            2620 wiz_defined-function locations,
+            601 strings with 4363 characters,
+and the built_in function-call counts, 684 in all, are:
+= -- 48
+> -- 24
+< -- 0
++ -- 10
+- -- 8
+* -- 28
+:= -- 100
+add.period$ -- 2
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 44
+empty$ -- 69
+format.name$ -- 12
+if$ -- 156
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 4
+newline$ -- 10
+num.names$ -- 4
+pop$ -- 31
+preamble$ -- 2
+purify$ -- 8
+quote$ -- 0
+skip$ -- 44
+stack$ -- 0
+substring$ -- 10
+swap$ -- 1
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 0
+while$ -- 4
+width$ -- 3
+write$ -- 19
+is.kanji.str$ -- 25
+(There was 1 warning)
