@@ -1,51 +1,49 @@
-This is upBibTeX, Version 0.99d-j0.36-u2.00 (utf8.euc) (TeX Live 2025/Homebrew)
+This is upBibTeX, Version 0.99d-j0.36-u2.00 (utf8.euc) (TeX Live 2025/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: jorsj.bst
 Database file #1: ../bibfiles/eng.bib
 Database file #2: ../bibfiles/jpn.bib
 Database file #3: ../bibfiles/url.bib
-Warning--I didn't find a database entry for "black2024"
-You've used 2 entries,
+You've used 3 entries,
             2620 wiz_defined-function locations,
-            601 strings with 4363 characters,
-and the built_in function-call counts, 684 in all, are:
-= -- 48
-> -- 24
+            605 strings with 4485 characters,
+and the built_in function-call counts, 993 in all, are:
+= -- 72
+> -- 36
 < -- 0
-+ -- 10
-- -- 8
-* -- 28
-:= -- 100
-add.period$ -- 2
-call.type$ -- 2
-change.case$ -- 8
++ -- 15
+- -- 12
+* -- 44
+:= -- 143
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 11
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 44
-empty$ -- 69
-format.name$ -- 12
-if$ -- 156
+cite$ -- 3
+duplicate$ -- 62
+empty$ -- 96
+format.name$ -- 18
+if$ -- 227
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 4
-newline$ -- 10
-num.names$ -- 4
-pop$ -- 31
+int.to.str$ -- 3
+missing$ -- 5
+newline$ -- 13
+num.names$ -- 6
+pop$ -- 39
 preamble$ -- 2
-purify$ -- 8
+purify$ -- 11
 quote$ -- 0
-skip$ -- 44
+skip$ -- 68
 stack$ -- 0
-substring$ -- 10
-swap$ -- 1
+substring$ -- 15
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 4
+type$ -- 8
 warning$ -- 0
-while$ -- 4
-width$ -- 3
-write$ -- 19
-is.kanji.str$ -- 25
-(There was 1 warning)
+while$ -- 6
+width$ -- 4
+write$ -- 27
+is.kanji.str$ -- 39

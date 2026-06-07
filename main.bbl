@@ -1,6 +1,10 @@
 \newcommand{\noop}[1]{}
 \begin{thebibliography}{1}
 
+\bibitem{black2024}
+Black,~K., et~al.: {$\pi_0$: A Vision-Language-Action Flow Model for General
+  Robot Control}, {\em arXiv:2410.24164 [cs.LG]},  (2024).
+
 \bibitem{thrun2005}
 Thrun,~S., Burgard,~W. and Fox,~D.: {\em {Probabilistic ROBOTICS}}, MIT Press,
   2005.
