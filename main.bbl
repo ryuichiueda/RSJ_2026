@@ -1,0 +1,11 @@
+\newcommand{\noop}[1]{}
+\begin{thebibliography}{1}
+
+\bibitem{thrun2005}
+Thrun,~S., Burgard,~W. and Fox,~D.: {\em {Probabilistic ROBOTICS}}, MIT Press,
+  2005.
+
+\bibitem{上田2019}
+{\noop{うえだ}}上田隆一：詳解確率ロボティクス, 講談社, 2019.
+
+\end{thebibliography}
