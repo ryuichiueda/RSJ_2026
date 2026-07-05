@@ -5,45 +5,45 @@ The style file: jorsj.bst
 Database file #1: ../bibfiles/eng.bib
 Database file #2: ../bibfiles/jpn.bib
 Database file #3: ../bibfiles/url.bib
-You've used 12 entries,
+You've used 13 entries,
             2620 wiz_defined-function locations,
-            658 strings with 5959 characters,
-and the built_in function-call counts, 4436 in all, are:
-= -- 343
-> -- 164
+            663 strings with 6021 characters,
+and the built_in function-call counts, 4728 in all, are:
+= -- 364
+> -- 171
 < -- 3
-+ -- 68
-- -- 56
-* -- 229
-:= -- 606
-add.period$ -- 12
-call.type$ -- 12
-change.case$ -- 50
++ -- 71
+- -- 58
+* -- 237
+:= -- 645
+add.period$ -- 13
+call.type$ -- 13
+change.case$ -- 53
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 259
-empty$ -- 427
-format.name$ -- 84
-if$ -- 1031
+cite$ -- 13
+duplicate$ -- 281
+empty$ -- 461
+format.name$ -- 87
+if$ -- 1101
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 15
-newline$ -- 40
-num.names$ -- 24
-pop$ -- 149
+int.to.str$ -- 13
+missing$ -- 17
+newline$ -- 43
+num.names$ -- 26
+pop$ -- 164
 preamble$ -- 2
-purify$ -- 50
+purify$ -- 53
 quote$ -- 0
-skip$ -- 297
+skip$ -- 319
 stack$ -- 0
-substring$ -- 120
+substring$ -- 125
 swap$ -- 18
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 42
+type$ -- 44
 warning$ -- 0
-while$ -- 27
-width$ -- 14
-write$ -- 99
-is.kanji.str$ -- 168
+while$ -- 29
+width$ -- 15
+write$ -- 107
+is.kanji.str$ -- 179
