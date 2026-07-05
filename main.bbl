@@ -1,6 +1,11 @@
 \newcommand{\noop}[1]{}
 \begin{thebibliography}{1}
 
+\bibitem{brohan2023}
+Brohan,~A., et~al.: {RT-2: Vision-Language-Action Models Transfer Web Knowledge
+  to Robotic Control}, in {\em In proc. of 7th Conference on Robot Learning
+  (CoRL 2023)}, 2023.
+
 \bibitem{fox1999}
 Fox,~D., Burgard,~W., Dellaert,~F. and Thrun,~S.: {Monte Carlo Localization:
   Efficient Position Estimation for Mobile Robots}, in {\em Proc. of AAAI-99},
@@ -19,8 +24,5 @@ Thrun,~S., Burgard,~W. and Fox,~D.: {\em {Probabilistic ROBOTICS}}, MIT Press,
 {\noop{いまい}}今井悠月, 上田隆一, 林原靖男：視覚と行動のend-to-end
   学習による経路追従行動の模倣 ---教師データの自己情報量に基づく重みづけ学習手法の提案---,
    計測自動制御学会第26回システムインテグレーション部門講演会, 2025.
-
-\bibitem{上田2019}
-{\noop{うえだ}}上田隆一：詳解確率ロボティクス, 講談社, 2019.
 
 \end{thebibliography}

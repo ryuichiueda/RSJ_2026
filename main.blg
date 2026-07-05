@@ -1,4 +1,4 @@
-This is upBibTeX, Version 0.99d-j0.36-u2.00 (utf8.euc) (TeX Live 2025/Homebrew)
+This is upBibTeX, Version 0.99d-j0.36-u2.00 (utf8.euc) (TeX Live 2025/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: jorsj.bst
@@ -7,43 +7,43 @@ Database file #2: ../bibfiles/jpn.bib
 Database file #3: ../bibfiles/url.bib
 You've used 5 entries,
             2620 wiz_defined-function locations,
-            617 strings with 4886 characters,
-and the built_in function-call counts, 1841 in all, are:
-= -- 137
-> -- 75
+            618 strings with 5008 characters,
+and the built_in function-call counts, 1910 in all, are:
+= -- 145
+> -- 80
 < -- 0
-+ -- 31
-- -- 26
-* -- 80
-:= -- 259
++ -- 33
+- -- 28
+* -- 86
+:= -- 268
 add.period$ -- 5
 call.type$ -- 5
 change.case$ -- 23
 chr.to.int$ -- 0
 cite$ -- 5
-duplicate$ -- 112
-empty$ -- 179
-format.name$ -- 39
-if$ -- 427
+duplicate$ -- 113
+empty$ -- 183
+format.name$ -- 42
+if$ -- 445
 int.to.chr$ -- 0
 int.to.str$ -- 5
-missing$ -- 8
+missing$ -- 7
 newline$ -- 19
 num.names$ -- 10
-pop$ -- 78
+pop$ -- 76
 preamble$ -- 2
 purify$ -- 23
 quote$ -- 0
-skip$ -- 122
+skip$ -- 128
 stack$ -- 0
 substring$ -- 25
-swap$ -- 4
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 14
+type$ -- 16
 warning$ -- 0
 while$ -- 10
 width$ -- 6
 write$ -- 43
-is.kanji.str$ -- 69
+is.kanji.str$ -- 73
