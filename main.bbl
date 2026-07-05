@@ -11,6 +11,10 @@ Fox,~D., Burgard,~W., Dellaert,~F. and Thrun,~S.: {Monte Carlo Localization:
   Efficient Position Estimation for Mobile Robots}, in {\em Proc. of AAAI-99},
   1999.
 
+\bibitem{kingma2014}
+Kingma,~D.~P. and Welling,~M.: {Auto-Encoding Variational Bayes}, in {\em
+  International Conference on Learning Representations (ICLR)}, 2014.
+
 \bibitem{thrun2005}
 Thrun,~S., Burgard,~W. and Fox,~D.: {\em {Probabilistic ROBOTICS}}, MIT Press,
   2005.
