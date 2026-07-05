@@ -126,7 +126,7 @@ when considering the application of robots to industry.
 
 \section{確率ロボティクス以前と以後}
 
-\subsection{計測と推定値に基づく制御}
+\subsection{計測に基づく制御}
 
 確率ロボティクス以前の手法で制御されるロボットは, 
 自身や操作対象の物体の位置が, 
@@ -135,6 +135,12 @@ when considering the application of robots to industry.
 特に工場で速く正確に動くロボットの場合, 
 決められた場所, 姿勢にない物体の存在は危険であり, 
 ロボットが動作する環境から取り除かれる. 
+また, センサによる物体の位置や姿勢の計測に問題があれば, 
+センサやその他ハードウェアの補強や配置の工夫, 
+あるいは環境の整備で対応することとなる. 
+環境の整備というのは, 
+ここではたとえば無人搬送車（\underline{a}utomated \underline{g}uided \underline{v}ehicle, AGV）
+のために, ガイド用の磁気テープを貼るなどの対応を意味する. 
 
 
 %その動作を担保するのは現在でも正確な位置計測である. 
@@ -157,12 +163,6 @@ when considering the application of robots to industry.
 間接的に計算されることもある. 
 
 
-もし$\V{\varepsilon}$が求められる範囲に収まらないなら, 
-センサやその他ハードウェアの補強や配置の工夫, 
-あるいは環境の整備で対応することとなる. 
-環境の整備というのは, 
-ここではたとえば無人搬送車（\underline{a}utomated \underline{g}uided \underline{v}ehicle, AGV）
-のために, ガイド用の磁気テープを貼るなどの対応を意味する. 
 
 しかし工場の外にロボットを出そうとすると, 
 そのような対応がとれないことがほとんどである. 
