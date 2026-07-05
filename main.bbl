@@ -27,6 +27,11 @@ Kingma,~D.~P. and Welling,~M.: {Auto-Encoding Variational Bayes}, in {\em
 Thrun,~S., Burgard,~W. and Fox,~D.: {\em {Probabilistic ROBOTICS}}, MIT Press,
   2005.
 
+\bibitem{ueda2015}
+Ueda,~R.: {Generation of Compensation Behavior of Autonomous Robot for
+  Uncertainty of Information with Probabilistic Flow Control}, {\em Advanced
+  Robotics}, Vol.~29 (2015), 721--734.
+
 \bibitem{乾2021}
 {\noop{いぬい}}乾敏郎,
   阪口豊：自由エネルギー原理入門 ---知覚・行動・コミュニケーションの計算原理,
