@@ -1,6 +1,10 @@
 \newcommand{\noop}[1]{}
 \begin{thebibliography}{10}
 
+\bibitem{bishop2006}
+Bishop,~C.~M.: {\em {Pattern Recognition and Machine Learning}}, Springer,
+  2006.
+
 \bibitem{black2024}
 Black,~K., et~al.: {$\pi_0$: A Vision-Language-Action Flow Model for General
   Robot Control}, {\em arXiv:2410.24164 [cs.LG]},  (2024).
@@ -36,6 +40,11 @@ Thrun,~S., Burgard,~W. and Fox,~D.: {\em {Probabilistic ROBOTICS}}, MIT Press,
 Ueda,~R.: {Generation of Compensation Behavior of Autonomous Robot for
   Uncertainty of Information with Probabilistic Flow Control}, {\em Advanced
   Robotics}, Vol.~29 (2015), 721--734.
+
+\bibitem{zhao2023}
+Zhao,~T.~Z., Kumar,~V., Levine,~S. and Finn,~C.: {Learning Fine-Grained
+  Bimanual Manipulation with Low-Cost Hardware}, in {\em In proc. of Robotics:
+  Science and Systems}, 2023.
 
 \bibitem{乾2021}
 {\noop{いぬい}}乾敏郎,
