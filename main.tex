@@ -151,21 +151,27 @@ when considering the application of robots to industry.
 このようなロボットの制御では, 
 %これを式で表すと, 
 %たとえばロボットの動作にとって重要な, 
-ある物体の位置が, ある座標系の位置ベクトル$\V{x}$で
+ある物体の位置や姿勢は, 次のような式
 \begin{align}
-	\hat{\V{x}} = \V{x}^* \pm \V{\varepsilon} \label{eq:measurement}
+	\hat{\V{x}} = \V{x}^* \pm \V{\varepsilon} \label{eq:measurement} \\
+	\V{x}^* = \hat{\V{x}} \pm \V{\varepsilon} \label{eq:measurement2}
 \end{align}
-と表現される. 
-ここで, $\V{x}^*$は物体の真の位置であり, 
-計測は$\V{x}^*$に, なんらかの雑音$\V{\varepsilon}$
-が加わって得られるという考え方である. 
-また, $\hat{\V{x}}$は, 直接計測されず, 
-間接的に計算されることもある. 
-
+に基づいて考えられる. 
+ここで$\V{x}$は, ある座標系の位置ベクトルで, 
+$\hat{\V{x}}$は計測値あるいは推定値, 
+$\V{x}^*$は物体の真の位置・姿勢を表す. 
+式(\ref{eq:measurement})は, 
+計測値$\hat{\V{x}}$は$\V{x}^*$に, なんらかの雑音$\V{\varepsilon}$
+が加わって得られるという考え方を表し, 
+式(\ref{eq:measurement2})は, 
+計測値$\hat{\V{x}}$が得られたなら, 
+真値$\V{x}^*$は$\V{\varepsilon}$の範囲内に収まっているはずだという
+仮定を意味する. 
 
 
 しかし工場の外にロボットを出そうとすると, 
-そのような対応がとれないことがほとんどである. 
+環境の整備や, 式(\ref{eq:measurement}), (\ref{eq:measurement2})のような定式化で
+対応がとれないことがほとんどである. 
 環境にはその環境の持ち主しか手を入れられないし, 
 どんなに精度の高いセンサをロボットに搭載しても, 
 それが原理的に使えない場所, 状況が必ずある. 
