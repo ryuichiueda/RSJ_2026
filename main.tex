@@ -154,7 +154,7 @@ when considering the application of robots to industry.
 ある物体の位置や姿勢は, 次のような式
 \begin{align}
 	\hat{\V{x}} = \V{x}^* \pm \V{\varepsilon} \label{eq:measurement} \\
-	\hat{\V{x}} - \V{\varepsilon} < \V{x}^* < \hat{\V{x}} + \V{\varepsilon} \label{eq:measurement2}
+	\hat{\V{x}} - \V{\varepsilon}_\text{max} < \V{x}^* < \hat{\V{x}} + \V{\varepsilon}_\text{max} \label{eq:measurement2}
 \end{align}
 に基づいて考えられる. 
 ここで$\V{x}$は, ある座標系の位置ベクトルで, 
@@ -165,9 +165,13 @@ $\V{x}^*$は物体の真の位置・姿勢を表す.
 が加わって得られるという考え方を表し, 
 式(\ref{eq:measurement2})は, 
 計測値$\hat{\V{x}}$が得られたなら, 
-真値$\V{x}^*$は$\V{\varepsilon}$の範囲内に収まっているはずだという
+真値$\V{x}^*$は$\V{\varepsilon}_\text{max}$の範囲内に収まっているはずだという
 仮定を意味する. 
+雑音$\V{\varepsilon}$については正規分布に基づいて発生すると
+確率的に考えられるが, 
+実際には$\V{\varepsilon}_\text{max}$のような上限値が想定される. 
 
+\subsection{同定から推定へ}
 
 しかし工場の外にロボットを出そうとすると, 
 環境の整備や, 式(\ref{eq:measurement}), (\ref{eq:measurement2})のような定式化で
@@ -185,7 +189,6 @@ $\V{x}^*$は物体の真の位置・姿勢を表す.
 %地図上の自身の位置は「東京タワーから等距離の円周上のどこか」
 %だとしか分からない. 
 
-\subsection{同定から推定へ}
 
 確率ロボティクスはこのような問題に対し, 
 「計測できないなら, 分からないということを
