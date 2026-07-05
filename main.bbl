@@ -37,4 +37,9 @@ Ueda,~R.: {Generation of Compensation Behavior of Autonomous Robot for
   阪口豊：自由エネルギー原理入門 ---知覚・行動・コミュニケーションの計算原理,
   岩波書店, 2021.
 
+\bibitem{上田2007}
+{\noop{うえだ}}上田隆一,
+  新井民夫：{パーティクルフィルタとQ-MDP法による状態推定の不確かさを考慮した自律ロボットの実時間行動決定},
+  日本ロボット学会誌, Vol.~25 (2007), 103--112.
+
 \end{thebibliography}
