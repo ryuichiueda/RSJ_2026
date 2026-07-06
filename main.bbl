@@ -32,6 +32,13 @@ Kaelbling,~L., Littman,~M. and Cassandra,~A.: {Planning and acting in partially
 Kingma,~D.~P. and Welling,~M.: {Auto-Encoding Variational Bayes}, in {\em
   International Conference on Learning Representations (ICLR)}, 2014.
 
+\bibitem{radford2021}
+Radford,~A., Kim,~J.~W., Hallacy,~C., Ramesh,~A., Goh,~G., Agarwal,~S.,
+  Sastry,~G., Askell,~A., Mishkin,~P., Clark,~J., Krueger,~G. and
+  Sutskever,~I.: Learning Transferable Visual Models From Natural Language
+  Supervision, in {\em Proceedings of the 38th International Conference on
+  Machine Learning}, 2021.
+
 \bibitem{thrun2005}
 Thrun,~S., Burgard,~W. and Fox,~D.: {\em {Probabilistic ROBOTICS}}, MIT Press,
   2005.
