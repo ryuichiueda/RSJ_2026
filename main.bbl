@@ -19,6 +19,10 @@ Fox,~D., Burgard,~W., Dellaert,~F. and Thrun,~S.: {Monte Carlo Localization:
   Efficient Position Estimation for Mobile Robots}, in {\em Proc. of AAAI-99},
   1999.
 
+\bibitem{hinton2006}
+Hinton,~G.~E. and Salakhutdinov,~R.~R.: {Reducing the Dimensionality of Data
+  with Neural Networks}, {\em Science}, Vol. 313 (2006), 504--507.
+
 \bibitem{ho2021}
 Ho,~J. and Salimans,~T.: {Classifier-Free Diffusion Guidance}, in {\em NeurIPS
   2021 Workshop on Deep Generative Models and Downstream Applications}, 2021.
@@ -31,6 +35,11 @@ Kaelbling,~L., Littman,~M. and Cassandra,~A.: {Planning and acting in partially
 \bibitem{kingma2014}
 Kingma,~D.~P. and Welling,~M.: {Auto-Encoding Variational Bayes}, in {\em
   International Conference on Learning Representations (ICLR)}, 2014.
+
+\bibitem{krizhevsky2012}
+Krizhevsky,~A., Sutskever,~I. and Hinton,~G.~E.: {ImageNet Classification with
+  Deep Convolutional Neural Networks}, in {\em Advances in Neural Information
+  Processing Systems}, 2012.
 
 \bibitem{mnih2015}
 Mnih,~V., Kavukcuoglu,~K., Silver,~D., Rusu,~A.~A., Veness,~J.,
