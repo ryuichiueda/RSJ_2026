@@ -32,6 +32,14 @@ Kaelbling,~L., Littman,~M. and Cassandra,~A.: {Planning and acting in partially
 Kingma,~D.~P. and Welling,~M.: {Auto-Encoding Variational Bayes}, in {\em
   International Conference on Learning Representations (ICLR)}, 2014.
 
+\bibitem{mnih2015}
+Mnih,~V., Kavukcuoglu,~K., Silver,~D., Rusu,~A.~A., Veness,~J.,
+  Bellemare,~M.~G., Graves,~A., Riedmiller,~M., Fidjeland,~A.~K.,
+  Ostrovski,~G., Petersen,~S., Beattie,~C., Sadik,~A., Antonoglou,~I.,
+  King,~H., Kumaran,~D., Wierstra,~D., Legg,~S. and Hassabis,~D.: {Human-level
+  control through deep reinforcement learning}, {\em Nature}, Vol. 518 (2015),
+  529--533.
+
 \bibitem{radford2021}
 Radford,~A., Kim,~J.~W., Hallacy,~C., Ramesh,~A., Goh,~G., Agarwal,~S.,
   Sastry,~G., Askell,~A., Mishkin,~P., Clark,~J., Krueger,~G. and
