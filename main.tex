@@ -157,25 +157,23 @@ when considering the application of robots to industry.
 このようなロボットの制御では, 
 %これを式で表すと, 
 %たとえばロボットの動作にとって重要な, 
-ある物体の位置や姿勢は, 次のような式
+ある物体の位置や姿勢の計測値や推定値を, 
+真の値に雑音が加わった値として考える. 
+これを式にすると, 
 \begin{align}
-	\hat{\V{x}} &= \V{x}^* \pm \V{\varepsilon} \label{eq:measurement} \\
-	\hat{\V{x}} - \V{\varepsilon}_\text{max} &< \V{x}^* < \hat{\V{x}} + \V{\varepsilon}_\text{max} \label{eq:measurement2}
+	\hat{\V{x}} &= \V{x}^* \pm \V{\varepsilon} \label{eq:measurement}
 \end{align}
-に基づいて考えられる. 
-ここで$\V{x}$は, ある座標系の位置ベクトルで, 
+となる. 
+ここで$\V{x}$はある座標系の位置ベクトルで, 
 $\hat{\V{x}}$は計測値あるいは推定値, 
 $\V{x}^*$は物体の真の位置・姿勢を表す. 
-式(\ref{eq:measurement})は, 
-計測値$\hat{\V{x}}$は$\V{x}^*$に, なんらかの雑音$\V{\varepsilon}$
-が加わって得られるという考え方を表し, 
-式(\ref{eq:measurement2})は, 
-計測値$\hat{\V{x}}$が得られたなら, 
-真値$\V{x}^*$は$\V{\varepsilon}_\text{max}$の範囲内に収まっているはずだという
-仮定を意味する. 
+また, もし$\V{\varepsilon}$の各元の最大値, 
+最小値を仮定できると, 
+$\V{x}^*$は, $\hat{\V{x}}$を中心とした一定の範囲に
+収まっていると仮定できる. 
 雑音$\V{\varepsilon}$については正規分布に基づいて発生すると
 確率的に考えられるが, 分布の範囲は狭いことが想定され, 
-計算の上では$\V{\varepsilon}_\text{max}$のような上限値が想定される. 
+計算の上では$\V{\varepsilon}$の各元には上限値が想定される. 
 
 \subsection{同定から推定へ}
 
