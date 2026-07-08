@@ -5,10 +5,9 @@ The style file: jorsj.bst
 Database file #1: ../bibfiles/eng.bib
 Database file #2: ../bibfiles/jpn.bib
 Database file #3: ../bibfiles/url.bib
-Warning--I didn't find a database entry for "上田2024"
 You've used 17 entries,
             2620 wiz_defined-function locations,
-            688 strings with 7172 characters,
+            687 strings with 7164 characters,
 and the built_in function-call counts, 7190 in all, are:
 = -- 542
 > -- 359
@@ -48,4 +47,3 @@ while$ -- 39
 width$ -- 19
 write$ -- 139
 is.kanji.str$ -- 263
-(There was 1 warning)
