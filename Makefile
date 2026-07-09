@@ -6,7 +6,7 @@ main.dvi: *.tex
 	sed -i 's/、/, /g' main.tex
 	sed -i 's/。/. /g' main.tex
 	platex main.tex
-	pbibtex main.aux
+#	pbibtex main.aux
 	platex main.tex
 	platex main.tex
 
